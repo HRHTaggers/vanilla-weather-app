@@ -1,0 +1,56 @@
+body {
+        font-family: 'Times New Roman', Times, serif;
+        text-align: left;
+        margin: 100px;
+        color: aliceblue;
+        background: url(https://th.bing.com/th/id/R.e96ca63457e79113d049e5ce33f4046b?rik=fZaQs%2fvVyTp%2f%2bA&riu=http%3a%2f%2fwww.baltana.com%2ffiles%2fwallpapers-10%2fTeal-Abstract-Shape-Design-Wallpaper-28502.jpg&ehk=nPAkRWD6wPsaY6TKjD99C3OZuhWsXRs4%2fOs2xcLhwZc%3d&risl=&pid=ImgRaw&r=0);
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    a {
+        color: #064241;
+    }
+
+    .btn-primary {
+        background-color: #0c7472fa;
+        border: none;
+    }
+
+    .btn-primary:hover {
+        background-color: #064241;
+        border: none;
+    }
+
+    .weather-panel {
+        background-color: rgba(240, 248, 255, 0.1);
+        border-radius: 30px;
+        padding: 30px;
+    }
+
+    .temperature {
+        font-size: 60px;
+    }
+
+    .conversion {
+      text-align: right;
+    }
+
+    .conversion-button {
+      background-color: #6fd1cf;
+      border: none;
+      border-radius: 40px;
+      color: aliceblue;
+      transition: all 200ms ease-in;
+    }
+
+    .conversion-button:hover {
+      background-color: #0c7472fa;
+    }
