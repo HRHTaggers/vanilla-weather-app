@@ -44,10 +44,10 @@ function retrieveWeather(response) {
   let windspeedElement = document.querySelector("#windspeed");
   let weatherDescriptionElement = document.querySelector("#weather-description");
 
-  temperatureElement.innerHTML = response.data.main.temp;
+  temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
   humidityElement.innerHTML = response.data.main.humidity;
-  windspeedElement.innerHTML = response.data.wind.speed;
+  windspeedElement.innerHTML = Math.round(response.data.wind.speed);
   weatherDescriptionElement.innerHTML = response.data.weather[0].description;
 }
 
