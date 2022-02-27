@@ -56,4 +56,4 @@ let chosenUnits = `metric`;
 let city = `London`;
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${chosenUnits}&appid=${apiKey}`;
 
-axios.get(apiUrl),then(retrieveWeather);
+axios.get(apiUrl).then(retrieveWeather);
