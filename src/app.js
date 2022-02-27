@@ -38,7 +38,7 @@ document.getElementById("minutes").innerHTML =
 //API connector & variables//
 function retrieveWeather(response) {
   console.log(response.data);
-  let temperatureElement = document.querySelector("#temperature"); 
+  let temperatureElement = document.querySelector("#temp-today"); 
   let cityElement = document.querySelector("#city");
   let humidityElement = document.querySelector("#humidity");
   let windspeedElement = document.querySelector("#windspeed");
@@ -53,7 +53,6 @@ function retrieveWeather(response) {
 
 let apiKey = `72a4d6e3c49499c57e42e446cad198b6`;
 let chosenUnits = `metric`;
-let city = `London`;
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${chosenUnits}&appid=${apiKey}`;
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&units=${chosenUnits}&appid=${apiKey}`;
 
 axios.get(apiUrl).then(retrieveWeather);
