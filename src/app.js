@@ -38,11 +38,11 @@ document.getElementById("minutes").innerHTML =
 //API connector & variables//
 function retrieveWeather(response) {
   console.log(response.data);
-  let temperatureElement = document.querySelector(`#temperature`); 
-  let cityElement = document.querySelector(`#city`);
-  let humidityElement = document.querySelector(`#humidity`);
-  let windspeedElement = document.querySelector(`#windspeed`);
-  let weatherDescriptionElement = document.querySelector(`#weather-description`);
+  let temperatureElement = document.querySelector("#temperature"); 
+  let cityElement = document.querySelector("#city");
+  let humidityElement = document.querySelector("#humidity");
+  let windspeedElement = document.querySelector("#windspeed");
+  let weatherDescriptionElement = document.querySelector("#weather-description");
 
   temperatureElement.innerHTML = response.data.main.temp;
   cityElement.innerHTML = response.data.name;
