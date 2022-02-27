@@ -52,7 +52,7 @@ function retrieveWeather(response) {
 }
 
 let apiKey = `72a4d6e3c49499c57e42e446cad198b6`;
-let units = `metric`;
+let chosenUnits = `metric`;
 let city = `London`;
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${chosenUnits}&appid=${apiKey}`;
 
