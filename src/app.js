@@ -37,6 +37,7 @@ document.getElementById("minutes").innerHTML =
 
 //API connector & variables//
 function retrieveWeather(response) {
+  console.log(response.data);
   let temperatureElement = document.querySelector(`#temperature`); 
   let cityElement = document.querySelector(`#city`);
   let humidityElement = document.querySelector(`#humidity`);
