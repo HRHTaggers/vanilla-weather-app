@@ -44,8 +44,8 @@ body {
     }
 
     .icon {
-      max-width: 100%;
-      height: auto;
+      max-width: 100px;
+      height: 100px;
     }
 
     .temperature {
