@@ -26,6 +26,8 @@ function retrieveWeather(response) {
   let weatherIconElement = document.querySelector("#weather-icon");
   let dateElement = document.querySelector("#date");
 
+  celsiusTemperature = Math.round(response.data.main.temp);
+
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
   humidityElement.innerHTML = response.data.main.humidity;
@@ -42,6 +44,7 @@ function retrieveWeather(response) {
   dateElement.innerHTML = formatDate(response.data.dt*1000)
 }
 
+//Search Engine//
 function searchCity(city) {
 let apiKey = `72a4d6e3c49499c57e42e446cad198b6`;
 let chosenUnits = `metric`;
@@ -58,8 +61,32 @@ function findCity(event) {
   appTitle.innerHTML = `Weather Forecast: ${cityInputElement.value}`;
 }
 
-searchCity();
+function showFahrenheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = Math.round((celsiusTemperature * 9) / 5 + 32);
+  let temperatureElement = document.querySelector("#temp-today");
+  temperatureElement.innerHTML = fahrenheitTemperature;
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+}
 
-//Search Engine//
+function showCelsiusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temp-today");
+  temperatureElement.innerHTML = celsiusTemperature;
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+}
+
+let celsiusTemperature = null;
+
 let form = document.querySelector("#search-engine");
 form.addEventListener("submit", findCity);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click",showFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", showCelsiusTemperature);
+
+searchCity();

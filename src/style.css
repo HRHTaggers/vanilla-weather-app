@@ -43,6 +43,15 @@ body {
         font-size: 60px;
     }
 
+    .active {
+      color: blue;
+      cursor: default;
+    }
+
+    .active:hover {
+      text-decoration: none;
+    }
+
     .conversion {
       text-align: right;
     }
