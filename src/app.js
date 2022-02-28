@@ -15,6 +15,19 @@ function formatDate(timestamp) {
   return `${weekday}, ${day} ${month}  ${hours}:${minutes}`;
 }
 
+function formatTime(timestamp) {
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  return `${hours}:${minutes}`
+}
+
 //API connector & variables//
 function retrieveWeather(response) {
   console.log(response.data);
@@ -43,8 +56,8 @@ function retrieveWeather(response) {
     "alt",
     `${response.data.weather[0].description}`
   );
-  sunriseElement.innerHTML = formatDate(response.data.sys.sunrise*1000);
-  sunsetElement.innerHTML = formatDate(response.data.sys.sunset*1000);
+  sunriseElement.innerHTML = formatTime(response.data.sys.sunrise*1000);
+  sunsetElement.innerHTML = formatTime(response.data.sys.sunset*1000);
   dateElement.innerHTML = `Last updated: ${formatDate(response.data.dt*1000)}`;
 }
 
