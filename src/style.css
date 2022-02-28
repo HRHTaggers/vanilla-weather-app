@@ -29,7 +29,7 @@ body {
         border-radius: 25px;
         transition: all 200ms ease-in;
         color: aliceblue;
-        line-height: 1.5;
+        height: ;
     }
 
     .search-button::after {
