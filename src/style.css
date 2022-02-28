@@ -28,6 +28,10 @@ body {
         color: #064241;
     }
 
+    footer {
+      padding: 10px;
+    }
+
     .btn-primary {
         background-color: #0c7472fa;
         border: none;
