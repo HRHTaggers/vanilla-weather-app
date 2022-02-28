@@ -58,3 +58,7 @@ body {
     .conversion-button:hover {
       background-color: #0c7472fa;
     }
+
+    #weather-description::first-letter {
+      text-transform: capitalize;
+    }
