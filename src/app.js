@@ -41,7 +41,7 @@ function retrieveWeather(response) {
     "alt",
     `${response.data.weather[0].description}`
   );
-  dateElement.innerHTML = formatDate(response.data.dt*1000)
+  dateElement.innerHTML = `Last updated: ${formatDate(response.data.dt*1000)}`;
 }
 
 //Search Engine//
