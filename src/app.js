@@ -24,6 +24,8 @@ function retrieveWeather(response) {
   let windspeedElement = document.querySelector("#windspeed");
   let weatherDescriptionElement = document.querySelector("#weather-description");
   let weatherIconElement = document.querySelector("#weather-icon");
+  let sunriseElement = document.querySelector("#sunrise");
+  let sunsetElement = document.querySelector("#sunset");
   let dateElement = document.querySelector("#date");
 
   celsiusTemperature = Math.round(response.data.main.temp);
@@ -41,6 +43,8 @@ function retrieveWeather(response) {
     "alt",
     `${response.data.weather[0].description}`
   );
+  sunriseElement.innerHTML = formatDate(response.data.sys.sunrise*1000);
+  sunsetElement.innerHTML = formatDate(response.data.sys.sunset*1000);
   dateElement.innerHTML = `Last updated: ${formatDate(response.data.dt*1000)}`;
 }
 
