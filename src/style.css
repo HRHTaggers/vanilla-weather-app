@@ -43,6 +43,11 @@ body {
       text-align: center;
     }
 
+    .icon {
+      max-width: 100%;
+      height: auto;
+    }
+
     .temperature {
       font-size: 60px;
       padding-right: 20px;
