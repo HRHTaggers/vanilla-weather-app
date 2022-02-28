@@ -3,7 +3,7 @@ body {
         text-align: left;
         margin: 100px 200px;
         color: aliceblue;
-        background: url(https://th.bing.com/th/id/R.e96ca63457e79113d049e5ce33f4046b?rik=fZaQs%2fvVyTp%2f%2bA&riu=http%3a%2f%2fwww.baltana.com%2ffiles%2fwallpapers-10%2fTeal-Abstract-Shape-Design-Wallpaper-28502.jpg&ehk=nPAkRWD6wPsaY6TKjD99C3OZuhWsXRs4%2fOs2xcLhwZc%3d&risl=&pid=ImgRaw&r=0);
+        background: image("C:\Users\hrhes\Documents\vanilla-weather-app\src\App generic background.pdf");
         background-size: cover;
     }
 
@@ -12,7 +12,7 @@ body {
     }
 
     h4 {
-      font-size: 20px;
+      font-size: 28px;
     }
 
     ul {
@@ -20,7 +20,7 @@ body {
     }
 
     li {
-      padding: 10px;
+      padding: 10px 10px 0px 10px;
       font-size: 20px;
     }
 
