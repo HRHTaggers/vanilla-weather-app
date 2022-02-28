@@ -68,8 +68,6 @@ body {
 
     .active:hover {
       text-decoration: none;
-      background-color: #0c7472fa;
-      color:#0c7472fa;
     }
 
     .conversion {
@@ -94,6 +92,6 @@ body {
       text-transform: capitalize;
     }
 
-    #date {
+    .last-updated {
       font-size: 16px;
     }
