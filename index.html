@@ -33,7 +33,7 @@
           <ul>
             <li>
               Last updated on: <span id="date"></span>
-              <span id="weather-description"></span>
+              <span id="weather-description" class="weather-description"></span>
             </li>
             <li>
               Humidity:
@@ -43,7 +43,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-6">
+        <div class="col-6 weather-today-panel">
           <div>
             <img
               src=""
@@ -51,11 +51,9 @@
               id="weather-icon"
               class="float-right" 
             />
-            <div>
-              <span class="temperature" id="temp-today">-</span>
+              <span class="temperature" id="temp-today">-  </span>
               <a href="#" id="fahrenheit-link" class="active inactive conversion-button">°F</a>
               <a href="#" id="celsius-link" class="active inactive conversion-button">°C</a>
-            </div>
           </div>
         </div>
       </div>

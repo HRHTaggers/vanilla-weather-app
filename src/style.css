@@ -34,13 +34,17 @@ body {
     }
 
     .weather-panel {
-        background-color: rgba(240, 248, 255, 0.1);
-        border-radius: 30px;
-        padding: 30px;
+      background-color: rgba(240, 248, 255, 0.1);
+      border-radius: 30px;
+      padding: 30px;
+    }
+
+    .weather-today-panel {
+      text-align: right;
     }
 
     .temperature {
-        font-size: 60px;
+      font-size: 60px;
     }
 
     .active {
@@ -70,9 +74,10 @@ body {
 
     .conversion-button:hover {
       background-color: #0c7472fa;
+      color:#0c7472fa;
       text-decoration: none;
     }
 
-    #weather-description:first-letter {
+    .weather-description::first-letter {
       text-transform: capitalize;
     }
