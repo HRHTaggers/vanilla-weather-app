@@ -55,7 +55,7 @@ function findCity(event) {
   let cityInputElement = document.querySelector("#city-input");
   searchCity(cityInputElement.value);
   let appTitle = document.querySelector("#title");
-  appTitle.innerHTML = `Weather Forecast: ${cityinputElement.value}`;
+  appTitle.innerHTML = `Weather Forecast: ${cityInputElement.value}`;
 }
 
 searchCity();
