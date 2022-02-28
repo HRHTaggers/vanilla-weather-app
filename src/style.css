@@ -23,18 +23,18 @@ body {
         color: #064241;
     }
 
-    .btn-primary {
+    .search-button {
         background-color: #0c7472fa;
         border: none;
         transition: all 200ms ease-in;
     }
 
-    .btn-primary::after {
+    .search-button::after {
       background-color: #0c7472fa;
       border: none;
     }
 
-    .btn-primary:hover {
+    .search-button:hover {
         background-color: #064241;
         border: none;
     }
@@ -69,6 +69,6 @@ body {
       background-color: #0c7472fa;
     }
 
-    #weather-description::first-letter {
+    #weather-description:first-letter {
       text-transform: capitalize;
     }
