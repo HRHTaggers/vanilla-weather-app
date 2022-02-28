@@ -16,7 +16,17 @@
   </head>
   <body>
     <div class="container"></div>
-    <h1>Weather App</h1>  
+    <h1>Weather App</h1>
+      <form id="search-engine" class="mb-3">
+        <div class="row">
+          <div class="col-9">
+            <input type="search" id="city-input" placeholder="Enter city" class="form-control" />
+          </div>
+          <div class="col-3">
+            <input type="submit" class="btn btn-primary w-100" value="Search" />
+          </div>
+        </div>
+      </form>  
       <div class="row weather-panel">
         <div class="col-6">
           <h1 id="city"></h1>
@@ -27,9 +37,9 @@
             </li>
             <li>
               Humidity:
-              <strong id="humidity"> </strong>
+              <strong id="humidity"> </strong>%
                Wind:
-              <strong id="windspeed"> </strong>
+              <strong id="windspeed"> </strong>km/h
             </li>
           </ul>
         </div>

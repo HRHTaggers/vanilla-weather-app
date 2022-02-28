@@ -33,7 +33,7 @@ function retrieveWeather(response) {
   weatherDescriptionElement.innerHTML = response.data.weather[0].description;
   weatherIconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   weatherIconElement.setAttribute(
     "alt",
@@ -42,8 +42,22 @@ function retrieveWeather(response) {
   dateElement.innerHTML = formatDate(response.data.dt*1000)
 }
 
+function searchCity(city) {
 let apiKey = `72a4d6e3c49499c57e42e446cad198b6`;
 let chosenUnits = `metric`;
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&units=${chosenUnits}&appid=${apiKey}`;
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q={${city}&units=${chosenUnits}&appid=${apiKey}`;
 
 axios.get(apiUrl).then(retrieveWeather);
+}
+
+function findCity(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  searchCity(cityInputElement.value);
+}
+
+searchCity();
+
+//Search Engine//
+let form = document.querySelector("#search-engine");
+form.addEventListener("submit", findCity);
