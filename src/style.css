@@ -65,10 +65,12 @@ body {
       border-radius: 40px;
       color: aliceblue;
       transition: all 200ms ease-in;
+      text-decoration: none;
     }
 
     .conversion-button:hover {
       background-color: #0c7472fa;
+      text-decoration: none;
     }
 
     #weather-description:first-letter {
