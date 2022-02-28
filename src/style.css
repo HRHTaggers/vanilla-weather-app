@@ -44,7 +44,8 @@ body {
     }
 
     .active {
-      color: aliceblue;
+      color: #064241;
+      background-color: aliceblue;
       cursor: default;
       text-decoration: none;
     }
@@ -59,6 +60,7 @@ body {
 
     .conversion-button {
       background-color: #6fd1cf;
+      padding: 5px;
       border: none;
       border-radius: 40px;
       color: aliceblue;
@@ -69,6 +71,6 @@ body {
       background-color: #0c7472fa;
     }
 
-    #weather-description::first-letter {
+    #weather-description:first-letter {
       text-transform: capitalize;
     }
