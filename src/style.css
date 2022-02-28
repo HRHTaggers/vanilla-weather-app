@@ -15,6 +15,10 @@ body {
       list-style: none;
     }
 
+    li::first-letter {
+      text-transform: capitalize;
+    }
+
     a {
         color: #064241;
     }
