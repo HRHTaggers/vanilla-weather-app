@@ -26,10 +26,7 @@ body {
     .search-button {
         background-color: #0c7472fa;
         border: none;
-        border-radius: 25px;
         transition: all 200ms ease-in;
-        color: aliceblue;
-        line-height: 1.5;
     }
 
     .search-button::after {
@@ -72,6 +69,6 @@ body {
       background-color: #0c7472fa;
     }
 
-    .weather-description:first-letter {
+    #weather-description:first-letter {
       text-transform: capitalize;
     }
