@@ -44,7 +44,7 @@ function retrieveWeather(response) {
   celsiusTemperature = Math.round(response.data.main.temp);
 
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
-  cityElement.innerHTML = `<small>Chosen location:<small> ${response.data.name}`;
+  cityElement.innerHTML = `Chosen location: ${response.data.name}`;
   humidityElement.innerHTML = response.data.main.humidity;
   windspeedElement.innerHTML = Math.round(response.data.wind.speed);
   weatherDescriptionElement.innerHTML = response.data.weather[0].description;
