@@ -45,7 +45,7 @@ function retrieveWeather(response) {
 function searchCity(city) {
 let apiKey = `72a4d6e3c49499c57e42e446cad198b6`;
 let chosenUnits = `metric`;
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q={${city}&units=${chosenUnits}&appid=${apiKey}`;
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${chosenUnits}&appid=${apiKey}`;
 
 axios.get(apiUrl).then(retrieveWeather);
 }
