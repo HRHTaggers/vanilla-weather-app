@@ -8,7 +8,7 @@ body {
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 30px;
     }
 
     ul {
@@ -17,7 +17,7 @@ body {
 
     li {
       padding: 10px;
-      font-size: 18px;
+      font-size: 20px;
     }
 
     li:first-letter {
