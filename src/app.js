@@ -68,6 +68,7 @@ function showFahrenheitTemperature(event) {
   temperatureElement.innerHTML = fahrenheitTemperature;
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
+  console.log(fahrenheitTemperature);
 }
 
 function showCelsiusTemperature(event) {
@@ -76,6 +77,7 @@ function showCelsiusTemperature(event) {
   temperatureElement.innerHTML = celsiusTemperature;
   celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
+  console.log(celsiusTemperature);
 }
 
 let celsiusTemperature = null;

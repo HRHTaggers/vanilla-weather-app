@@ -44,8 +44,9 @@ body {
     }
 
     .active {
-      color: blue;
+      color: aliceblue;
       cursor: default;
+      text-decoration: none;
     }
 
     .active:hover {
