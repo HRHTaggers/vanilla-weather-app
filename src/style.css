@@ -16,7 +16,8 @@ body {
     }
 
     li {
-      padding: 20px;
+      padding: 10px;
+      font-size: 18px;
     }
 
     li:first-letter {
