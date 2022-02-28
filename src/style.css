@@ -55,7 +55,7 @@ body {
     }
 
     .weather-panel {
-      background-color: rgba(2, 83, 88, 0.322);
+      background-color: rgba(2, 83, 88, 0.50);
       border-radius: 30px;
       padding: 30px;
     }
