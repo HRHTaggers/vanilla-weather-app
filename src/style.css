@@ -15,7 +15,7 @@ body {
       list-style: none;
     }
 
-    li:first-letter {
+    li::first-letter {
       text-transform: capitalize;
     }
 
@@ -26,12 +26,6 @@ body {
     .btn-primary {
         background-color: #0c7472fa;
         border: none;
-        transition: all 200ms ease-in;
-    }
-
-    .btn-primary::after {
-      background-color: #0c7472fa;
-      border: none;
     }
 
     .btn-primary:hover {
@@ -43,10 +37,6 @@ body {
         background-color: rgba(240, 248, 255, 0.1);
         border-radius: 30px;
         padding: 30px;
-    }
-
-    .main-results-panel {
-        text-align: right;
     }
 
     .temperature {
