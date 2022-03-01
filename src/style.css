@@ -111,3 +111,26 @@ body {
     .daylight {
       font-size: 20px;
     }
+
+    .weather-forecast {
+      margin: 15px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .weather-forecast-date {
+      font-size: 14px;
+      color:#6fd1cf;
+    }
+
+    .weather-forecast-temperature {
+      font-size: 14px;
+    }
+
+    .weather-forecast-temperature-max {
+      color:aliceblue;
+    }
+
+    .weather-forecast-temperature-min {
+      color: #f0f8ffa2;
+    }
