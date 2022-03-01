@@ -30,7 +30,6 @@ function formatTime(timestamp) {
 
 //API connector & variables//
 function displayForecast(response) {
-  console.log(response.data);
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
