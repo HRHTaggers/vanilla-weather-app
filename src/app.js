@@ -39,9 +39,7 @@ function displayForecast() {
     forecastHTML +
           `
             <div class="col-2">
-              <div class="weather-forecast-date">
-              `${day}`
-              </div>
+              <div class="weather-forecast-date">${day}</div>
               <img 
                 src="https://img.icons8.com/?id=1MUqfGWx3fZS&size=2x&color=000000";
                 alt=""
@@ -52,7 +50,7 @@ function displayForecast() {
               </div>
             </div>
       `;
-  })
+  });
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
