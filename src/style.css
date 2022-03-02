@@ -73,6 +73,7 @@ body {
       border-radius: 30px;
       padding: 30px;
       text-align: center;
+      align-items: center;
     }
 
     .icon {
@@ -86,17 +87,6 @@ body {
       padding-left: 20px;
     }
 
-    .active {
-      color: #064241;
-      background-color: aliceblue;
-      cursor: default;
-      text-decoration: none;
-    }
-
-    .active:hover {
-      text-decoration: none;
-    }
-
     .conversion {
       text-align: right;
     }
@@ -107,7 +97,7 @@ body {
       border: none;
       border-radius: 40px;
       color: aliceblue;
-      transition: all 200ms ease-in;
+      transition: all 200ms ease-in-out;
       text-decoration: none;
     }
 
