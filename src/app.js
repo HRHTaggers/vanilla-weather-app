@@ -99,7 +99,7 @@ function retrieveWeather(response) {
   weatherDescriptionElement.innerHTML = response.data.weather[0].description;
   weatherIconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `src/${response.data.weather[0].icon}`
   );
   weatherIconElement.setAttribute(
     "alt",
