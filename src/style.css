@@ -44,16 +44,6 @@ body {
       padding: 10px;
     }
 
-    .day-background {
-      background: url(../src/dave-hoefler-ELXbHhzVFO0-unsplash.png);
-      background-size: cover;
-    }
-
-    .night-background {
-      background: url(../src/andy-holmes-rCbdp8VCYhQ-unsplash.png);
-      background-size: cover;
-    }
-
     .btn-primary {
         background-color: #0c7472fa;
         border: none;
@@ -120,10 +110,6 @@ body {
 
     .daylight {
       font-size: 20px;
-    }
-
-    .daylight-display {
-      display: inline-block;
     }
 
     .weather-forecast {

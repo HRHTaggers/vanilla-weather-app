@@ -1,11 +1,3 @@
-//Background variable//
-let hours = getHours();
-if(hours <=7 && hours >=19) {
-  document.body.classList.add("day-background");
-} else {
-  document.body.classList.add("night-background");
-}
-
 //Date and Time variable//
 function formatDate(timestamp) {
   let date = new Date(timestamp);
