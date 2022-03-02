@@ -134,3 +134,7 @@ body {
     .weather-forecast-temperature-min {
       color: #f0f8ffa2;
     }
+
+    .daylight-icon {
+      display: inline;
+    }
