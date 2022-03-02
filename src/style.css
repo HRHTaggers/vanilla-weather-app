@@ -103,6 +103,7 @@ body {
 
     .weather-description {
       font-size: 30px;
+      text-align: left;
     }
 
     .weather-description::first-letter {
