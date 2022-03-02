@@ -109,11 +109,11 @@ function retrieveWeather(response) {
   );
   weatherIconElement.setAttribute(
     "width",
-    `150`
+    `300`
   );
   weatherIconElement.setAttribute(
     "height",
-    `150`
+    `300`
   );
   sunriseElement.innerHTML = formatTime(response.data.sys.sunrise*1000);
   sunsetElement.innerHTML = formatTime(response.data.sys.sunset*1000);
