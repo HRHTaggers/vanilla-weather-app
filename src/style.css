@@ -3,7 +3,7 @@ body {
         text-align: left;
         margin: 100px 200px;
         color: aliceblue;
-        background: url("../src/AppGenericBackground.png");
+        background: url("https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmlnaHQlMjBza3l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
         background-size: cover;
     }
 
