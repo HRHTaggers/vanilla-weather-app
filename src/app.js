@@ -159,3 +159,8 @@ celsiusLink.addEventListener("click", showCelsiusTemperature);
 
 searchCity();
 displayForecast();
+
+function changeBackground() {
+  let hours = now.getHours();
+  if(hours >=7 && hours <=19) {document.body.classList.add("day-background");}
+}

@@ -44,6 +44,21 @@ body {
       padding: 10px;
     }
 
+    .day-background {
+      background: url(../src/Day-background.png);
+      background-size: cover;
+    }
+
+    .btn-primary {
+      background-color: #FE9601;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #d16004;
+      cursor: pointer;
+    }
+
     .weather-panel {
       background-color: rgba(0, 0, 0, 0.425);
       border-radius: 30px;
@@ -77,7 +92,7 @@ body {
     }
 
     .conversion-button {
-      background-color: #6fd1cf;
+      background-color: #FE9601;
       padding: 5px;
       border: none;
       border-radius: 40px;
