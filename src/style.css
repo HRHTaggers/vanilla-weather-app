@@ -119,12 +119,12 @@ body {
     }
 
     .weather-forecast-date {
-      font-size: 14px;
+      font-size: 18px;
       color:#6fd1cf;
     }
 
     .weather-forecast-temperature {
-      font-size: 14px;
+      font-size: 18px;
     }
 
     .weather-forecast-temperature-max {
