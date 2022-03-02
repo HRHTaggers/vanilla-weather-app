@@ -107,14 +107,6 @@ function retrieveWeather(response) {
     "alt",
     `${response.data.weather[0].description}`
   );
-  weatherIconElement.setAttribute(
-    "width",
-    `300`
-  );
-  weatherIconElement.setAttribute(
-    "height",
-    `300`
-  );
   sunriseElement.innerHTML = formatTime(response.data.sys.sunrise*1000);
   sunsetElement.innerHTML = formatTime(response.data.sys.sunset*1000);
   dateElement.innerHTML = `Last updated: ${formatDate(response.data.dt*1000)}`;
