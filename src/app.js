@@ -5,7 +5,6 @@ function formatDate(timestamp) {
   if (hours < 10) {hours = `0${hours}`};
   if(hours >7 && hours <19) {document.body.classList.add("day-background"); document.body.classList.remove("night-background");}
   else {document.body.classList.add("night-background"); document.body.classList.remove("day-background");}
-  }
   let minutes = date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
