@@ -162,7 +162,7 @@ displayForecast();
 
 function changeBackground() {
   let hours = now.getHours();
-  if(hours >7 && hours <19) {document.body.classList.add("day-background");}
-  else {document.body.classList.add("night-background");}
+  if(hours >7 && hours <19) {document.body.classList.add("day-background"); document.body.classList.remove("night-background");}
+  else {document.body.classList.add("night-background"); document.body.classList.remove("day-background");}
 }
 changeBackground;
