@@ -165,3 +165,4 @@ function changeBackground() {
   if(hours >7 && hours <19) {document.body.classList.add("day-background");}
   else {document.body.classList.add("night-background");}
 }
+changeBackground;
