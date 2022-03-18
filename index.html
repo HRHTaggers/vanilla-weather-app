@@ -15,22 +15,22 @@
     <title>Weather App</title>
   </head>
   <body class="day-background night-background">
-    <div class="container"></div>
+    <div class="container-fluid"></div>
     <h1 id="title">Weather App <span id="date" class="last-updated"></span></h1>
       <form id="search-engine" class="mb-3">
         <div class="row">
-          <div class="col-9">
+          <div class="col-md-9">
             <input type="search" id="city-input" placeholder="Enter city" class="form-control" />
           </div>
-          <div class="col-3">
+          <div class="col-md-3">
             <input type="submit" class="btn btn-primary w-100" value="Search" />
           </div>
         </div>
       </form>  
       <div class="row weather-panel">
         <h3 id="city">Current Weather:</h3>
-        <div class="col-1"></div>
-        <div class="col-3">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
           <ul>
             <li>
               <span id="weather-description" class="weather-description">-
@@ -45,22 +45,22 @@
             </li>
           </ul> 
         </div>
-        <div class="col-3"> 
+        <div class="col-md-3"> 
           <img
             src=""
             alt=""
             id="weather-icon"
-            class="icon"
+            class="icon img-fluid"
           />
         </div>
-        <div class="col-1">
+        <div class="col-md-1">
           <span class="temperature" id="temp-today">--</span>
           <div>
             <a href="#" id="fahrenheit-link" class="conversion-button">°F</a>
             <a href="#" id="celsius-link" class="conversion-button">°C</a>
           </div>
         </div>
-         <div class="col-3">
+         <div class="col-md-3">
           <ul>
             <li>
               <img
@@ -76,7 +76,7 @@
             </li>
           </ul>
           </div>
-          <div class="col-1"></div>
+          <div class="col-md-1"></div>
         <div class="weather-forecast" id="forecast">
         </div>
       </div>
