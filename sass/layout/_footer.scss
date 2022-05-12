@@ -1,0 +1,14 @@
+.footer {
+    padding: 1rem;
+    text-align: center;
+
+    & a {
+        color: $color-text-light;
+        text-decoration: none;
+        @include transition;
+
+        &:hover {
+            color: $color-background-primary-dark;
+        }
+    }
+}

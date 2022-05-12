@@ -1,0 +1,7 @@
+@mixin transition {
+    transition: all 200ms ease-in-out;
+}
+
+@mixin hover {
+    transform: translateY(1px);
+}

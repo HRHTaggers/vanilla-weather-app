@@ -55,7 +55,7 @@ function displayForecast(response) {
     forecastHTML +
     `
       <div class="col-md-2">
-        <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
+        <div class="weather-forecast__date">${formatDay(forecastDay.dt)}</div>
         <img 
           src="src/${
           forecastDay.weather[0].icon
@@ -63,13 +63,13 @@ function displayForecast(response) {
           alt="${forecastDay.weather[0].description}
           width="100"
           height="100"
-          class="img-fluid"
+          class="weather-forecast__small-icon img-fluid"
           />
-          <div class="weather-forecast-temperature">
-          <span class="weather-forecast-temperature-max">${Math.round(
+          <div class="weather-forecast__temperature-main">
+          <span class="weather-forecast__temperature-max">${Math.round(
           forecastDay.temp.max
           )}° </span>
-          <span class="weather-forecast-temperature-min">  ${Math.round(
+          <span class="weather-forecast__temperature-min">  ${Math.round(
           forecastDay.temp.min
           )}°</span>
       </div>

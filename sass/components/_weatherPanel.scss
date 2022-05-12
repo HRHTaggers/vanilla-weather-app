@@ -1,0 +1,52 @@
+.weather-panel {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  padding: 2rem;
+  text-align: center;
+  align-items: center;
+
+  &__main-title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  &__weather-description {
+    font-size: 2rem;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 1rem;
+  }
+
+  &__list-item {
+    padding: 1rem;
+    font-size: 1.25rem;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
+
+  &__main-icon {
+    max-width: 14rem;
+  }
+
+  &__main-temperature {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 4rem;
+  }
+
+  &__daylight-icon {
+    max-height: 2rem;
+  }
+
+  &__daylight-hours {
+    font-size: 1.25rem;
+  }
+}

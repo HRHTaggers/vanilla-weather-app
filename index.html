@@ -11,36 +11,37 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="sass/main.css" />
     <title>Weather App</title>
   </head>
   <body class="day-background night-background">
-    <div class="container-fluid"></div>
-    <h1 id="title">Weather App <span id="date" class="last-updated"></span></h1>
-      <form id="search-engine" class="mb-3">
-        <div class="row">
-          <div class="col-md-9">
-            <input type="search" id="city-input" placeholder="Enter city" class="form-control" />
+    <div class="container-fluid">
+    <h1 class="heading-primary" id="title">Weather App <span class="heading-primary__supplementary-heading" id="date"></span></h1>
+      <form class="form" id="search-engine">
+        <div class="form__row row">
+          <div class="form__search-engine col-md-9">
+            <input  class="form__search-engine--search-box w-100" type="search" id="city-input" placeholder="Enter city" />
           </div>
-          <div class="col-md-3">
-            <input type="submit" class="btn btn-primary w-100" value="Search" />
+          <div class="form__search-engine col-md-3">
+            <input class="form__submit-btn btn-search w-100" type="submit" class="btn-primary" value="Search" />
           </div>
         </div>
       </form>  
-      <div class="row weather-panel">
-        <h3 id="city">Current Weather:</h3>
+      <div class="weather-panel">
+        <div class="weather-panel__row row">
+          <h3 class="weather-panel__main-title" id="city">Current Weather:</h3>
         <div class="col-md-1"></div>
         <div class="col-md-3">
-          <ul>
-            <li>
-              <span id="weather-description" class="weather-description">-
+          <ul class="weather-panel__list">
+            <li class="weather-panel__list-item">
+              <span id="weather-description" class="weather-panel__weather-description">-
               </span>
             </li>
-            <li>
+            <li class="weather-panel__list-item">
               Humidity:
-              <span id="humidity">--</span>%
+              <span class="weather-panel__humidity" id="humidity">--</span>%
               <div> Wind:
-              <span id="windspeed">--</span>km/h
+              <span class="weather-panel__windspeed" id="windspeed">--</span>km/h
               </div>
             </li>
           </ul> 
@@ -50,29 +51,33 @@
             src=""
             alt=""
             id="weather-icon"
-            class="icon img-fluid"
+            class="weather-panel__main-icon icon img-fluid"
           />
         </div>
         <div class="col-md-1">
-          <span class="temperature" id="temp-today">--</span>
+          <span class="weather-panel__main-temperature" id="temp-today">--</span>
           <div>
-            <a href="#" id="fahrenheit-link" class="conversion-button">°F</a>
-            <a href="#" id="celsius-link" class="conversion-button">°C</a>
+            <button class="btn-conversion">
+              <a href="#" id="fahrenheit-link" class="btn-conversion">°F</a>
+            </button>
+            <button class="btn-conversion">
+              <a href="#" id="celsius-link" class="btn-conversion">°C</a>
+            </button>
           </div>
         </div>
          <div class="col-md-3">
-          <ul>
-            <li>
+          <ul class="weather-panel__list">
+            <li class="weather-panel__list-item">
               <img
-              src="src/Sunrise.png" height="30" width="30" alt="sun" class="daylight-icon"
+              src="src/Sunrise.png" class="weather-panel__daylight-icon" alt="sun"
               />
               <div class="daylight"> Sunrise: <span id="sunrise">--:--</span></div>    
             </li>
-            <li>
+            <li class="weather-panel__list-item">
               <img
-              src="src/Sunset.png" height="30" width="30" alt="moon" class="daylight-icon"
+              src="src/Sunset.png" class="weather-panel__daylight-icon" alt="moon"
               />
-              <div class="daylight"> Sunset: <span id="sunset">--:--</span></div>
+              <div class="weather-panel__daylight-hours"> Sunset: <span id="sunset">--:--</span></div>
             </li>
           </ul>
           </div>
@@ -80,7 +85,8 @@
         <div class="weather-forecast" id="forecast">
         </div>
       </div>
-      <footer>
+    </div>
+      <footer class="footer">
         This project was coded by 
         <a href="https://www.linkedin.com/in/helen-ruth-tagliarini-21217623/" target="blank">Helen Tagliarini</a>
          and is 

@@ -1,0 +1,22 @@
+.weather-forecast {
+    margin: 15px;
+    text-align: center;
+    font-size: 18px;
+
+    &__date {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    &__temperature-main {
+      font-size: 1.25rem;
+    }
+
+    &__temperature-max {
+      color: $color-white;
+    }
+
+    &__temperature-min {
+      color: $color-text-dark;
+    }
+}

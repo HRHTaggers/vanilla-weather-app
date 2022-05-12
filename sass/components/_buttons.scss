@@ -1,0 +1,44 @@
+.btn-search {
+    &,
+    &::after,
+    &::before,
+    &:visited {
+    background-color: $color-background-primary-light;
+    color: $color-white;
+    border: none;
+    border-radius: 3px;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+    @include transition;
+    }
+
+    &:hover {
+        background-color: $color-background-primary-dark;
+        box-shadow: 0 0 1rem rgba($color-background-primary-dark, 0.9);
+        cursor: pointer;
+        @include hover;
+    }
+}
+
+.btn-conversion {
+    background-color: $color-background-primary-light;
+    color: $color-white;
+    margin: 0.25rem 0;
+    padding: 5px;
+    border: none;
+    border-radius: 40px;
+    color: $color-text-light;
+    text-decoration: none;
+    @include transition;
+
+    & a {
+        color: $color-white;
+    }
+
+    &:hover {
+        background-color: $color-background-primary-dark;
+        color: $color-text-light;
+        cursor: pointer;
+        @include hover;
+    }
+}

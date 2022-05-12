@@ -1,0 +1,12 @@
+.form {
+    &__search-engine {
+        padding: 0.5rem;
+
+        &--search-box {
+            display: inline-block;
+            border: none;
+            border-radius: 3px;
+            padding: 0.25rem 0.5rem;
+        }
+    }
+}

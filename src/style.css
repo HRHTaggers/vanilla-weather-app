@@ -1,7 +1,7 @@
 body {
         font-family: 'Times New Roman', Times, serif;
         text-align: left;
-        margin: 100px 200px;
+        margin: 10%;
         color: aliceblue;
         background: -webkit-radial-gradient(teal,#016868);
     }
@@ -50,7 +50,7 @@ body {
     }
 
     .day-background {
-      background: url(../src/Day-background.png);
+      background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url(../src/Day-background.png);
       background-size: cover;
     }
 
