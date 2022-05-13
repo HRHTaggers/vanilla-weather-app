@@ -2,12 +2,38 @@ html {
   font-size: 100%;
 }
 
+@media only screen and (max-width: 36em) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media only screen and (max-width: 27em) {
+  html {
+    font-size: 80%;
+  }
+}
+
 body {
   font-family: 'Dosis', sans-serif;
   text-align: left;
   margin: 3% 7%;
   color: aliceblue;
   background: -webkit-radial-gradient(#2192ba, #17617b);
+}
+
+@media only screen and (max-width: 36em) {
+  body {
+    margin: 3%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 27em) {
+  body {
+    margin: 2%;
+    text-align: center;
+  }
 }
 
 .day-background {
@@ -29,8 +55,33 @@ body {
   font-size: 1rem;
 }
 
-.w-fill {
-  max-width: 100%;
+.heading-secondary {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.heading-secondary {
+  font-size: 1.75rem;
+}
+
+.u-margin-top-medium {
+  margin-top: 4rem;
+}
+
+@media only screen and (max-width: 36em) {
+  .u-margin-top-medium {
+    margin-top: 2rem;
+  }
+}
+
+.u-margin-top-small {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 36em) {
+  .u-margin-top-small {
+    margin-top: 1.5rem;
+  }
 }
 
 .btn-search, .btn-search::after, .btn-search::before, .btn-search:visited {
@@ -53,19 +104,12 @@ body {
 
 .btn-conversion {
   background-color: #FE9601;
-  color: white;
   margin: 0.25rem 0;
   padding: 5px;
   border: none;
-  border-radius: 40px;
-  color: aliceblue;
-  text-decoration: none;
+  border-radius: 90px;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-}
-
-.btn-conversion a {
-  color: white;
 }
 
 .btn-conversion:hover {
@@ -74,6 +118,15 @@ body {
   cursor: pointer;
   -webkit-transform: translateY(1px);
           transform: translateY(1px);
+}
+
+.btn-conversion__link {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-conversion__link:hover {
+  color: aliceblue;
 }
 
 .form__search-engine {
@@ -97,13 +150,12 @@ body {
           align-items: center;
 }
 
-.weather-panel__main-title {
-  font-size: 2rem;
-  font-weight: 600;
+.weather-panel__row {
+  margin-top: 1rem;
 }
 
 .weather-panel__weather-description {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .weather-panel__weather-description::first-letter {
@@ -128,6 +180,12 @@ body {
   max-width: 14rem;
 }
 
+@media only screen and (max-width: 36em) {
+  .weather-panel__main-icon {
+    max-width: 10rem;
+  }
+}
+
 .weather-panel__main-temperature {
   display: inline-block;
   margin-top: 2rem;
@@ -143,18 +201,17 @@ body {
 }
 
 .weather-forecast {
-  margin: 15px;
+  margin: 1rem;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.25rem;
+}
+
+.weather-forecast__row {
+  margin-top: 1rem;
 }
 
 .weather-forecast__date {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.weather-forecast__temperature-main {
-  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .weather-forecast__temperature-max {
@@ -179,5 +236,19 @@ body {
 
 .footer a:hover {
   color: #f57105;
+}
+
+.footer__logo {
+  display: block;
+  margin: 1rem auto;
+  max-width: 2rem;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.footer__logo:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

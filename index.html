@@ -11,91 +11,146 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="sass/main.css" />
     <title>Weather App</title>
   </head>
   <body class="day-background night-background">
     <div class="container-fluid">
-    <h1 class="heading-primary" id="title">Weather App <span class="heading-primary__supplementary-heading" id="date"></span></h1>
+      <h1 class="heading-primary u-margin-top-small" id="title">
+        Weather App
+        <span class="heading-primary__supplementary-heading" id="date"></span>
+      </h1>
       <form class="form" id="search-engine">
         <div class="form__row row">
           <div class="form__search-engine col-md-9">
-            <input  class="form__search-engine--search-box w-100" type="search" id="city-input" placeholder="Enter city" />
+            <input
+              class="form__search-engine--search-box w-100"
+              type="search"
+              id="city-input"
+              placeholder="Enter city"
+            />
           </div>
           <div class="form__search-engine col-md-3">
-            <input class="form__submit-btn btn-search w-100" type="submit" class="btn-primary" value="Search" />
+            <input
+              class="form__submit-btn btn-search w-100"
+              type="submit"
+              class="btn-primary"
+              value="Search"
+            />
           </div>
         </div>
-      </form>  
+      </form>
       <div class="weather-panel">
         <div class="weather-panel__row row">
-          <h3 class="weather-panel__main-title" id="city">Current Weather:</h3>
-        <div class="col-md-1"></div>
-        <div class="col-md-3">
-          <ul class="weather-panel__list">
-            <li class="weather-panel__list-item">
-              <span id="weather-description" class="weather-panel__weather-description">-
-              </span>
-            </li>
-            <li class="weather-panel__list-item">
-              Humidity:
-              <span class="weather-panel__humidity" id="humidity">--</span>%
-              <div> Wind:
-              <span class="weather-panel__windspeed" id="windspeed">--</span>km/h
-              </div>
-            </li>
-          </ul> 
-        </div>
-        <div class="col-md-3"> 
-          <img
-            src=""
-            alt=""
-            id="weather-icon"
-            class="weather-panel__main-icon icon img-fluid"
-          />
-        </div>
-        <div class="col-md-1">
-          <span class="weather-panel__main-temperature" id="temp-today">--</span>
-          <div>
-            <button class="btn-conversion">
-              <a href="#" id="fahrenheit-link" class="btn-conversion">°F</a>
-            </button>
-            <button class="btn-conversion">
-              <a href="#" id="celsius-link" class="btn-conversion">°C</a>
-            </button>
-          </div>
-        </div>
-         <div class="col-md-3">
-          <ul class="weather-panel__list">
-            <li class="weather-panel__list-item">
-              <img
-              src="src/Sunrise.png" class="weather-panel__daylight-icon" alt="sun"
-              />
-              <div class="daylight"> Sunrise: <span id="sunrise">--:--</span></div>    
-            </li>
-            <li class="weather-panel__list-item">
-              <img
-              src="src/Sunset.png" class="weather-panel__daylight-icon" alt="moon"
-              />
-              <div class="weather-panel__daylight-hours"> Sunset: <span id="sunset">--:--</span></div>
-            </li>
-          </ul>
-          </div>
+          <h3 class="heading-secondary" id="city"></h3>
+          <h3 class="weather-panel__main-title heading-tertiary">
+            Current Weather
+          </h3>
           <div class="col-md-1"></div>
-        <div class="weather-forecast" id="forecast">
+          <div class="col-md-3">
+            <ul class="weather-panel__list">
+              <li class="weather-panel__list-item">
+                <span
+                  id="weather-description"
+                  class="weather-panel__weather-description"
+                  >-
+                </span>
+              </li>
+              <li class="weather-panel__list-item">
+                Humidity:
+                <span class="weather-panel__humidity" id="humidity">--</span>%
+                <div>
+                  Wind:
+                  <span class="weather-panel__windspeed" id="windspeed">--</span
+                  >km/h
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <img
+              src=""
+              alt=""
+              id="weather-icon"
+              class="weather-panel__main-icon img-fluid"
+            />
+          </div>
+          <div class="col-md-1">
+            <span class="weather-panel__main-temperature" id="temp-today"
+              >--</span
+            >
+            <div>
+              <button class="btn-conversion">
+                <a href="#" id="fahrenheit-link" class="btn-conversion__link"
+                  >°F</a
+                >
+              </button>
+              <button class="btn-conversion">
+                <a href="#" id="celsius-link" class="btn-conversion__link"
+                  >°C</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <ul class="weather-panel__list">
+              <li class="weather-panel__list-item">
+                <img
+                  src="src/Sunrise.png"
+                  class="weather-panel__daylight-icon"
+                  alt="sun"
+                />
+                <div class="daylight">
+                  Sunrise: <span id="sunrise">--:--</span>
+                </div>
+              </li>
+              <li class="weather-panel__list-item">
+                <img
+                  src="src/Sunset.png"
+                  class="weather-panel__daylight-icon"
+                  alt="moon"
+                />
+                <div class="weather-panel__daylight-hours">
+                  Sunset: <span id="sunset">--:--</span>
+                </div>
+              </li>
+            </ul>
+            <div class="col-md-1"></div>
+          </div>
+          <div class="5-day-forecast__row row">
+            <h3 class="5-day-forecast__main-title heading-tertiary">
+              5-Day Forecast
+            </h3>
+          </div>
+          <div class="weather-forecast__row row">
+            <div class="weather-forecast" id="forecast"></div>
+          </div>
         </div>
       </div>
-    </div>
       <footer class="footer">
-        This project was coded by 
-        <a href="https://www.linkedin.com/in/helen-ruth-tagliarini-21217623/" target="blank">Helen Tagliarini</a>
-         and is 
-        <a href="https://github.com/HRHTaggers/vanilla-weather-app" target="blank">open-sourced on GitHub</a>
-         and 
-        <a href="https://jovial-booth-c0b3b8.netlify.app/" target="blank">hosted on Netlify</a>
+        This project was coded by
+        <a
+          href="https://www.linkedin.com/in/helen-ruth-tagliarini-21217623/"
+          target="blank"
+          >Helen Tagliarini</a
+        >
+        and is
+        <a
+          href="https://github.com/HRHTaggers/vanilla-weather-app"
+          target="blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href="https://jovial-booth-c0b3b8.netlify.app/" target="blank"
+          >hosted on Netlify</a
+        >
+        <img class="footer__logo" src="/src/helen-tagliarini-logo-back-light.png" alt="helen-tagliarini-logo" />
       </footer>
     </div>
     <script src="src/app.js"></script>

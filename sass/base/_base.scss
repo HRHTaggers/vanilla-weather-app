@@ -1,5 +1,13 @@
 html {
     font-size: 100%;
+
+    @include respond(tab-port) {
+        font-size: 85%;
+    }
+
+    @include respond(phone) {
+        font-size: 80%;
+    }
 }
 
 body {
@@ -8,6 +16,16 @@ body {
     margin: 3% 7%;
     color: $color-text-light;
     background: -webkit-radial-gradient($color-background-secondary-light, $color-background-secondary-dark);
+
+    @include respond(tab-port) {
+        margin: 3%;
+        text-align: center;
+    }
+
+    @include respond(phone) {
+        margin: 2%;
+        text-align: center;
+    }
 }
 
 .day-background {

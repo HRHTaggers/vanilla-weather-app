@@ -1,15 +1,14 @@
 .weather-forecast {
-    margin: 15px;
+    margin: 1rem;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.25rem;
 
-    &__date {
-      font-size: 1.25rem;
-      font-weight: bold;
+    &__row {
+      margin-top: 1rem;
     }
 
-    &__temperature-main {
-      font-size: 1.25rem;
+    &__date {
+      font-weight: 600;
     }
 
     &__temperature-max {

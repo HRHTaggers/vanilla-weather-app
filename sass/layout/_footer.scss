@@ -11,4 +11,16 @@
             color: $color-background-primary-dark;
         }
     }
+
+    &__logo {
+        display: block;
+        margin: 1rem auto;
+        max-width: 2rem;
+        @include transition;
+
+        &:hover {
+            transform: rotateY(180deg);
+            cursor: pointer;
+        }
+    }
 }

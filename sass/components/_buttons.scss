@@ -21,23 +21,25 @@
 
 .btn-conversion {
     background-color: $color-background-primary-light;
-    color: $color-white;
     margin: 0.25rem 0;
     padding: 5px;
     border: none;
-    border-radius: 40px;
-    color: $color-text-light;
-    text-decoration: none;
+    border-radius: 90px;
     @include transition;
-
-    & a {
-        color: $color-white;
-    }
 
     &:hover {
         background-color: $color-background-primary-dark;
         color: $color-text-light;
         cursor: pointer;
         @include hover;
+    }
+
+    &__link {
+        color: $color-white;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-text-light;
+        }
     }
 }
