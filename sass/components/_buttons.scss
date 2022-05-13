@@ -14,7 +14,6 @@
 
     &:hover {
         background-color: $color-background-primary-dark;
-        box-shadow: 0 0 1rem rgba($color-background-primary-dark, 0.9);
         cursor: pointer;
         @include hover;
     }
